@@ -1,3 +1,6 @@
 [submodule "rss-mcp-client"]
 	path = rss-mcp-client
 	url = https://github.com/gperdrizet/rss-mcp-client.git
+[submodule "rss-mcp-server"]
+	path = rss-mcp-server
+	url = https://github.com/gperdrizet/rss-mcp-server.git
