@@ -13,6 +13,8 @@ Both were built on Gradio and run in HuggingFace Spaces.
 
 ![Engineering diagram](https://github.com/gperdrizet/MCP-hackathon/blob/main/assets/engineering_diagram.jpg "engineering diagram")
 
+Note: this is a hackathon/demonstration project built in just a few days and still under rapid active development - not everything in the above diagram is implemented yet. But, we are about 70% of the way there and still have two days!
+
 ## The RSS MCP server
 
 The RSS MCP server currently exposes one tool - the calling agent can pass in a website name, URL or direct link to an RSS feed and get back information about the posts in that feed.
