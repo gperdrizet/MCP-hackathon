@@ -7,7 +7,7 @@
 
 I love RSS feeds - they remind me of a time when the internet was a weird and wonderful place, filled with interesting content hiding behind every link. The tools to produce and navigate that content have improved by leaps and bounds. However,  the improvement has not come without some losses. Content often feels homogeneous and it is too often painfully apparent that your favorite platform has a large degree of control over what content you see and what content you don't.
 
-This tool give the user back some of that control. It let's them decide what content and sources they are interested in. I built it because I want access to diverse, unfiltered publishing by many sources, paired modern AI to help me navigate it. I want the model to help me ingest my feed, not create it for me!
+This tool give the user back some of that control. It let's them decide what content and sources they are interested in. I built it because I want access to diverse, unfiltered publishing by many sources, paired with modern AI to help me navigate it. I want the model to help me ingest my feed, not create it for me!
 
 My hackathon build is a pair of HuggingFace Spaces:
 
