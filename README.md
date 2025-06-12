@@ -1,14 +1,14 @@
 # Gradio Agents &amp; MCP Hackathon 2025
 
-**Problem**: I love RSS feeds, but want help keeping up with the content flux from my subscriptions.
+**Problem**: I love RSS feeds, but want help keeping up with the content flux.
 
-**Solution**: Build a tools so LLMs can find and interact with RSS feeds on my behalf.
+**Solution**: Build tools for LLMs to find and interact with RSS feeds on my behalf.
 
 ## Introduction
 
-I love RSS feeds - they remind me of a time when the internet was a weird and wonderful place, filled with interesting content hiding behind every link. The tools to produce and navigate that content have improved by leaps and bounds. However,  that improvement has not come without some losses. Content often feels homogeneous and highly curated. It is too often painfully apparent that your favorite platform has a large degree of control over what content you see and what content you don't.
+I love RSS feeds - they remind me of a time when the internet was a weird and wonderful place, filled with interesting content behind every link. The tools to produce and navigate content have improved by leaps and bounds. However, improvement has not come without cost. Content often feels homogeneous and highly curated. The degree to which your favorite platform controls what you see and what you don't is painfully apparent.
 
-This tool give the user back some of that control. It lets you decide what content and sources you are interested in. I built it because I want access to diverse, unfiltered publishing by many sources, and I want modern AI to help me navigate it. I want the model to help me ingest my feed, not create it for me!
+This tool give the user back some of that control. It lets you decide what content sources you are interested in, and then pull from them directly. I built it because I want access to diverse and unfiltered publishing by many sources, and I want modern AI to help me navigate it. I want the model to help me ingest my feed, not create it for me!
 
 ## The build
 
@@ -23,7 +23,7 @@ Both were built with Gradio and run in HuggingFace Spaces.
 
 ## The RSS MCP server
 
-The RSS MCP server exposes a set of custom tools for interacting with RSS feeds - the calling agent can pass in a website name, URL or direct link to an RSS feed and get back information about the posts in that feed. That information can be used in RAG and summarization at the request of the user.
+The RSS MCP server exposes a set of custom tools for interacting with RSS feeds - the calling agent can pass in a website name, URL or direct link to an RSS feed and get back links, summaries and full-text content from that feed.
 
 ### Features
 
