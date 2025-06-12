@@ -1,23 +1,23 @@
 # Gradio Agents &amp; MCP Hackathon 2025
 
-**Problem**: I love RSS feeds, but need help keeping up with all of the content from my subscriptions.
+**Problem**: I love RSS feeds, but want help keeping up with the content flux from my subscriptions.
 
-**Solution**: Build a tool to allow LLMs to find and interact with RSS feeds on behalf of the user.
+**Solution**: Build a tools so LLMs can find and interact with RSS feeds on my behalf.
 
 ## Introduction
 
-I love RSS feeds - they remind me of a time when the internet was a weird and wonderful place, filled with interesting content hiding behind every link. The tools to produce and navigate that content have improved by leaps and bounds. However,  the improvement has not come without some losses. Content often feels homogeneous and it is too often painfully apparent that your favorite platform has a large degree of control over what content you see and what content you don't.
+I love RSS feeds - they remind me of a time when the internet was a weird and wonderful place, filled with interesting content hiding behind every link. The tools to produce and navigate that content have improved by leaps and bounds. However,  that improvement has not come without some losses. Content often feels homogeneous and highly curated. It is too often painfully apparent that your favorite platform has a large degree of control over what content you see and what content you don't.
 
-This tool give the user back some of that control. It let's them decide what content and sources they are interested in. I built it because I want access to diverse, unfiltered publishing by many sources, paired with modern AI to help me navigate it. I want the model to help me ingest my feed, not create it for me!
+This tool give the user back some of that control. It lets you decide what content and sources you are interested in. I built it because I want access to diverse, unfiltered publishing by many sources, and I want modern AI to help me navigate it. I want the model to help me ingest my feed, not create it for me!
 
 ## The build
 
 My hackathon build is a pair of HuggingFace Spaces:
 
-1. [![Server HuggingFace Space](https://github.com/gperdrizet/rss-mcp-server/actions/workflows/publish_hf_space.yml/badge.svg)](https://huggingface.co/spaces/Agents-MCP-Hackathon/rss-mcp-server) A MCP server exposing a tools that agents can use to interact with RSS feed content
-2. [![Client HuggingFace Space](https://github.com/gperdrizet/rss-mcp-client/actions/workflows/publish_hf_space.yml/badge.svg)](https://huggingface.co/spaces/Agents-MCP-Hackathon/rss-mcp-client) A MCP client demonstration using the Anthropic API to to interact with the RSS MCP server.
+1. [![Server HuggingFace Space](https://github.com/gperdrizet/rss-mcp-server/actions/workflows/publish_hf_space.yml/badge.svg)](https://huggingface.co/spaces/Agents-MCP-Hackathon/rss-mcp-server) [A MCP server](https://huggingface.co/spaces/Agents-MCP-Hackathon/rss-mcp-server) exposing a tools that agents can use to find and interact with RSS feed content.
+2. [![Client HuggingFace Space](https://github.com/gperdrizet/rss-mcp-client/actions/workflows/publish_hf_space.yml/badge.svg)](https://huggingface.co/spaces/Agents-MCP-Hackathon/rss-mcp-client) [A MCP client](https://huggingface.co/spaces/Agents-MCP-Hackathon/rss-mcp-client) demonstration using the Anthropic API to to interact with the RSS MCP server.
 
-Both were built on Gradio and run in HuggingFace Spaces.
+Both were built with Gradio and run in HuggingFace Spaces.
 
 ![Engineering diagram](https://github.com/gperdrizet/MCP-hackathon/blob/main/assets/engineering_diagram.jpg "engineering diagram")
 
