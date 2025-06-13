@@ -8,14 +8,14 @@
 
 I love RSS feeds - they remind me of a time when the internet was a weird and wonderful place, filled with interesting content behind every link. The tools to produce and navigate content have improved by leaps and bounds. However, improvement has not come without cost. Content often feels homogeneous and highly curated. The degree to which your favorite platform controls what you see and what you don't is painfully apparent.
 
-This tool give the user back some of that control. It lets you decide what content sources you are interested in, and then pull from them directly. I built it because I want access to diverse and unfiltered publishing by many sources, and I want modern AI to help me navigate it. I want the model to help me ingest my feed, not create it for me!
+This tool gives the user back some of that control. It lets you decide what content sources you are interested in, and then pull from them directly. I built it because I want access to diverse and unfiltered publishing by many sources, and I want modern AI to help me navigate it. I want the model to help me ingest my feed, not create it for me!
 
 ## The build
 
 My hackathon build is a pair of HuggingFace Spaces:
 
 1. [![Server HuggingFace Space](https://github.com/gperdrizet/rss-mcp-server/actions/workflows/publish_hf_space.yml/badge.svg)](https://huggingface.co/spaces/Agents-MCP-Hackathon/rss-mcp-server) [A MCP server](https://huggingface.co/spaces/Agents-MCP-Hackathon/rss-mcp-server) exposing a tools that agents can use to find and interact with RSS feed content.
-2. [![Client HuggingFace Space](https://github.com/gperdrizet/rss-mcp-client/actions/workflows/publish_hf_space.yml/badge.svg)](https://huggingface.co/spaces/Agents-MCP-Hackathon/rss-mcp-client) [A MCP client](https://huggingface.co/spaces/Agents-MCP-Hackathon/rss-mcp-client) demonstration using the Anthropic API to to interact with the RSS MCP server.
+2. [![Client HuggingFace Space](https://github.com/gperdrizet/rss-mcp-client/actions/workflows/publish_hf_space.yml/badge.svg)](https://huggingface.co/spaces/Agents-MCP-Hackathon/rss-mcp-client) [A MCP client](https://huggingface.co/spaces/Agents-MCP-Hackathon/rss-mcp-client) demonstrating a agentic chatbot using the Anthropic API to to interact with the RSS MCP server.
 
 Both were built with Gradio and run in HuggingFace Spaces.
 
@@ -50,11 +50,11 @@ Phew!
 
 ## The RSS MCP client
 
-The demonstration client is an agentic chatbot using [Anthropic's Claude Haiku 3](https://docs.anthropic.com/en/docs/about-claude/models/overview). It connects to the MCP server via a custom interface heavily inspired by Adel Zaalouk's excellent repo: [MCP SSE Client Python](https://github.com/zanetworker/mcp-sse-client-python).
+The demonstration client is an agentic chatbot using [Anthropic's Claude Haiku 3.5](https://docs.anthropic.com/en/docs/about-claude/models/overview). It connects to the MCP server via a custom interface heavily inspired by Adel Zaalouk's excellent repo: [MCP SSE Client Python](https://github.com/zanetworker/mcp-sse-client-python).
 
 ### Features
 
-1. Inference with Anthropic's efficient claude-3-haiku model.
+1. Inference with Anthropic's fast and cost effective claude-3.5-haiku model.
 2. Custom MCP client with asynchronous server side events, retry and error handling based on the excellent repo by [Adel Zaalouk](https://github.com/zanetworker/mcp-playground/tree/main).
 3. Multi-turn re-prompting to allow LLM workflows with multiple tool calls.
 4. Queue and worker system to show user what's going on 'under the hood' while the model calls tools and generates replies. 
